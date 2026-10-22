@@ -1,17 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Mohammad Abid Miah | Microsoft Dynamics 365 Business Central Functional Consultant</title>
-<!-- Fonts -->
+<!-- Google Fonts: Plus Jakarta Sans -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Outfit:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
+<!-- Tailwind CSS with Cobalt Lumina tokens -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
@@ -19,705 +18,730 @@
       theme: {
         extend: {
           colors: {
-            "on-secondary": "#532200",
-            "surface-dim": "#131317",
-            "surface-bright": "#39393d",
-            "on-primary-fixed-variant": "#832700",
-            "primary-fixed-dim": "#ffb59d",
-            "background": "#131317",
-            "on-background": "#e4e1e7",
-            "inverse-on-surface": "#303034",
-            "secondary-fixed": "#ffdbc9",
-            "on-tertiary": "#4b2800",
-            "on-secondary-container": "#fff7f4",
-            "on-primary-container": "#561600",
-            "on-tertiary-fixed": "#2d1600",
-            "secondary-fixed-dim": "#ffb68d",
-            "on-secondary-fixed-variant": "#763300",
-            "error": "#ffb4ab",
-            "on-surface": "#e4e1e7",
-            "surface-variant": "#353439",
-            "tertiary-fixed-dim": "#ffb874",
-            "primary": "#ffb59d",
-            "on-error-container": "#ffdad6",
-            "secondary": "#ffb68d",
-            "tertiary-container": "#c9843e",
-            "on-primary": "#5d1900",
-            "surface-container-highest": "#353439",
-            "surface": "#131317",
-            "tertiary-fixed": "#ffdcbf",
-            "on-secondary-fixed": "#321200",
-            "inverse-primary": "#ab3500",
-            "tertiary": "#ffb874",
-            "on-surface-variant": "#e3beb3",
-            "secondary-container": "#b95502",
-            "surface-container-lowest": "#0e0e12",
-            "on-tertiary-container": "#452400",
-            "on-tertiary-fixed-variant": "#6b3b00",
-            "surface-container-high": "#2a292e",
-            "surface-tint": "#ffb59d",
-            "surface-container-low": "#1b1b1f",
-            "surface-container": "#1f1f23",
-            "on-error": "#690005",
-            "inverse-surface": "#e4e1e7",
-            "primary-container": "#ff5e1e",
-            "outline": "#aa897f",
-            "primary-fixed": "#ffdbd0",
-            "outline-variant": "#5b4138",
-            "on-primary-fixed": "#390c00",
-            "error-container": "#93000a"
-          },
-          borderRadius: {
-            "DEFAULT": "1rem",
-            "lg": "2rem",
-            "xl": "3rem",
-            "full": "9999px"
-          },
-          spacing: {
-            "space-md": "1rem",
-            "gutter": "1.5rem",
-            "margin-lg": "5rem",
-            "space-xl": "2.5rem",
-            "space-xs": "0.25rem",
-            "gutter-lg": "2rem",
-            "space-lg": "1.5rem",
-            "space-sm": "0.5rem",
-            "margin": "1.5rem",
-            "margin-md": "3rem"
+            "primary": "#004ac6",
+            "primary-container": "#2563eb",
+            "on-primary": "#ffffff",
+            "secondary": "#0058be",
+            "secondary-container": "#2170e4",
+            "on-surface": "#0b1c30",
+            "on-surface-variant": "#434655",
+            "surface": "#f8f9ff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e5eeff",
+            "surface-container-high": "#dce9ff",
+            "surface-container-highest": "#d3e4fe",
+            "surface-container-lowest": "#ffffff",
+            "outline": "#737686",
+            "outline-variant": "#c3c6d7",
+            "cobalt": {
+              50: "#eff6ff",
+              100: "#dbeafe",
+              200: "#bfdbfe",
+              500: "#3b82f6",
+              600: "#2563eb",
+              700: "#1d4ed8",
+              800: "#1e40af"
+            }
           },
           fontFamily: {
-            "headline-sm": ["Outfit"],
-            "display-hero-mobile": ["Outfit"],
-            "body-lg": ["Inter"],
-            "headline-lg": ["Outfit"],
-            "body-md": ["Inter"],
-            "headline-lg-mobile": ["Outfit"],
-            "label-sm": ["Inter"],
-            "body-sm": ["Inter"],
-            "display-hero": ["Outfit"],
-            "label-md": ["Inter"],
-            "headline-md": ["Outfit"],
-            "label-caps": ["Inter"]
+            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+            display: ['"Plus Jakarta Sans"', "sans-serif"]
           },
-          fontSize: {
-            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }],
-            "display-hero-mobile": ["38px", { lineHeight: "46px", letterSpacing: "-0.02em", fontWeight: "700" }],
-            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }],
-            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600" }],
-            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }],
-            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
-            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }],
-            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }],
-            "display-hero": ["64px", { lineHeight: "72px", letterSpacing: "-0.03em", fontWeight: "700" }],
-            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "500" }],
-            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }],
-            "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }]
+          boxShadow: {
+            'saas-card': '0 10px 35px -5px rgba(15, 23, 42, 0.04), 0 2px 8px -2px rgba(15, 23, 42, 0.02)',
+            'saas-float': '0 20px 50px -10px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03)',
+            'saas-pill': '0 4px 20px -2px rgba(37, 99, 235, 0.28)'
           }
         }
       }
     }
   </script>
 <style>
-    .glass-hud {
-      background: rgba(18, 18, 24, 0.72);
-      backdrop-filter: blur(28px);
-      -webkit-backdrop-filter: blur(28px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    .glass-card {
-      background: rgba(16, 16, 22, 0.65);
-      backdrop-filter: blur(32px);
-      -webkit-backdrop-filter: blur(32px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-    }
-    .ember-gradient {
-      background: linear-gradient(135deg, #FF5E1E 0%, #FF8A3D 100%);
-    }
-    .ember-glow {
-      box-shadow: 0 16px 40px -12px rgba(255, 94, 30, 0.35);
-    }
-    .ember-glow-sm {
-      box-shadow: 0 8px 24px -6px rgba(255, 94, 30, 0.4);
-    }
-    .radial-flare {
-      background: radial-gradient(circle at 50% 30%, rgba(255, 94, 30, 0.16) 0%, rgba(14, 14, 18, 0) 70%);
-    }
-    .technical-grid {
-      background-size: 40px 40px;
-      background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    .hirebyte-mesh {
+      background: 
+        radial-gradient(circle at 18% 12%, rgba(219, 234, 254, 0.6) 0%, transparent 45%),
+        radial-gradient(circle at 85% 25%, rgba(224, 231, 255, 0.5) 0%, transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(239, 246, 255, 0.7) 0%, transparent 50%),
+        #f5f7fc;
     }
   </style>
 </head>
-<body class="bg-surface-container-lowest text-on-surface antialiased technical-grid relative min-h-screen selection:bg-primary-container selection:text-white overflow-x-hidden">
-<!-- Ambient Cinematic Glow Orbs -->
-<div class="fixed top-[-10vw] left-[20vw] w-[45vw] h-[45vw] rounded-full radial-flare pointer-events-none -z-10 blur-3xl opacity-70"></div>
-<div class="fixed top-[45vh] right-[-10vw] w-[40vw] h-[40vw] rounded-full radial-flare pointer-events-none -z-10 blur-3xl opacity-40"></div>
-<div class="fixed bottom-[-15vw] left-[10vw] w-[50vw] h-[50vw] rounded-full radial-flare pointer-events-none -z-10 blur-3xl opacity-50"></div>
-<!-- 1. TOP FLOATING GLASS NAVIGATION (Shared Component Anchored) -->
-<header class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-50 flex items-center justify-between px-6 py-3 rounded-full bg-surface-container-lowest/70 backdrop-blur-xl border border-outline-variant/30 shadow-2xl shadow-surface-container-lowest/50">
-<!-- Brand / Identity -->
-<a class="flex items-center gap-3 group" href="#overview">
-<div class="relative w-10 h-10 rounded-full overflow-hidden border border-outline-variant/40 group-hover:border-primary-container transition-colors duration-300">
+<body class="hirebyte-mesh text-[#0f172a] antialiased selection:bg-blue-600 selection:text-white min-h-screen">
+<!-- 1. FLOATING PILL NAVIGATION -->
+<header class="fixed top-4 sm:top-5 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 flex items-center justify-between px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-slate-200/80 shadow-saas-card transition-all">
+<!-- Brand Avatar & Name -->
+<a class="flex items-center gap-3 group shrink-0" href="#overview">
+<div class="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-blue-600/20 group-hover:ring-blue-600 transition-all shrink-0">
 <img alt="Mohammad Abid Miah" class="w-full h-full object-cover" src="assets/profile.jpg"/>
 </div>
 <div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface">Mohammad Abid Miah</span>
-<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase hidden sm:block">D365 BC Functional Consultant</span>
+<span class="font-bold text-[14px] leading-tight tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors whitespace-nowrap">Mohammad Abid Miah</span>
+<span class="text-[10px] sm:text-[10.5px] font-semibold text-blue-600 uppercase tracking-wider leading-snug">Microsoft Dynamics 365<br/>Business Central Functional Consultant</span>
 </div>
 </a>
-<!-- Navigation Links -->
-<nav class="hidden lg:flex items-center gap-1 font-label-md text-label-md">
-<a class="text-primary-container font-semibold bg-surface-variant/40 rounded-full px-4 py-1.5 transition-colors" href="#overview">Functional Overview</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors px-4 py-1.5" href="#core-erp">D365 BC</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors px-4 py-1.5" href="#mobility-sfa">Integrations</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors px-4 py-1.5" href="#orchestration">Impact</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors px-4 py-1.5" href="#artifacts">Case Studies</a>
+<!-- Navigation Segmented Links -->
+<nav class="hidden xl:flex items-center gap-1.5 p-1 bg-slate-100/80 rounded-full border border-slate-200/60 text-[13px] font-semibold text-slate-600 whitespace-nowrap shrink-0">
+<a class="px-3.5 py-1.5 rounded-full text-slate-900 bg-white shadow-sm transition-all whitespace-nowrap shrink-0" href="#overview">Architecture</a>
+<a class="px-3.5 py-1.5 rounded-full hover:text-slate-900 transition-colors whitespace-nowrap shrink-0" href="#core-erp">D365 BC</a>
+<a class="px-3.5 py-1.5 rounded-full hover:text-slate-900 transition-colors whitespace-nowrap shrink-0" href="#mobility-sfa">Field Force</a>
+<a class="px-3.5 py-1.5 rounded-full hover:text-slate-900 transition-colors whitespace-nowrap shrink-0" href="#hrm-payroll">HRM Core</a>
+<a class="px-3.5 py-1.5 rounded-full hover:text-slate-900 transition-colors whitespace-nowrap shrink-0" href="#orchestration">5 Streams</a>
+<a class="px-3.5 py-1.5 rounded-full hover:text-slate-900 transition-colors whitespace-nowrap shrink-0" href="#artifacts">Case Blueprints</a>
 </nav>
-<!-- Trailing Action -->
-<div class="flex items-center gap-3">
-<a class="px-4 py-2 rounded-full bg-surface-variant/40 border border-outline-variant/40 hover:border-primary/40 text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant/60 transition-all flex items-center gap-1.5 hidden sm:flex" href="https://www.linkedin.com/in/mohammadabidmiah" target="_blank" rel="noopener noreferrer"><svg class="w-4 h-4 fill-current text-primary" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg><span>LinkedIn</span></a>
-<a class="ember-gradient ember-glow-sm text-white font-label-md text-label-md font-semibold px-5 py-2 rounded-full scale-[1.02] active:scale-[0.98] transition-transform duration-200 flex items-center gap-1.5" href="#consultation">
-<span>Initiate Consultation</span>
-<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+<!-- Call to Action Button -->
+<div class="flex items-center gap-2 shrink-0">
+<a class="px-3.5 py-2 rounded-full border border-slate-200/80 hover:border-blue-500 text-slate-700 hover:text-blue-600 font-semibold text-[13px] hover:bg-slate-50 transition-all flex items-center gap-1.5 hidden sm:flex whitespace-nowrap shrink-0" href="https://www.linkedin.com/in/mohammadabidmiah" target="_blank" rel="noopener noreferrer">
+  <svg class="w-3.5 h-3.5 fill-current text-blue-600 shrink-0" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+  <span class="whitespace-nowrap">LinkedIn</span>
+</a>
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-[11px] sm:text-[12px] px-4 py-1.5 rounded-full shadow-saas-pill hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2 shrink-0" href="#consultation">
+<span class="leading-tight text-left">Initiate<br/>Consultation</span>
+<span class="material-symbols-outlined text-[15px] shrink-0">north_east</span>
 </a>
 </div>
 </header>
-<!-- MAIN CANVAS -->
-<main class="pt-32 pb-24 px-4 sm:px-8 max-w-7xl mx-auto space-y-28">
+<!-- MAIN WRAPPER -->
+<main class="pt-28 pb-24 px-4 sm:px-8 max-w-7xl mx-auto space-y-24">
 <!-- 2. HERO SECTION -->
-<section class="relative pt-8 sm:pt-14 pb-8" id="overview">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<section class="relative pt-6 sm:pt-10 pb-4" id="overview">
+<!-- Centered Hirebyte Style Segmented Pill Controls -->
+<div class="flex items-center justify-center mb-10">
+<div class="inline-flex items-center p-1.5 rounded-full bg-white border border-slate-200/80 shadow-saas-card gap-1 sm:gap-2">
+<div class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-600 text-white text-[12px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span>Discovery to Go-Live</span>
+</div>
+<div class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-slate-600 hover:text-slate-900 text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[15px] text-blue-600">hub</span>
+<span>5-Discipline Orchestration</span>
+</div>
+<div class="hidden md:flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-slate-600 text-[12px] font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>Full-Lifecycle ERP Governance</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 <!-- Left Hero Copy -->
 <div class="lg:col-span-7 space-y-6">
-<div class="flex items-center gap-4 mb-2">
-  <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-primary/50 shadow-lg shrink-0">
-    <img src="assets/profile.jpg" alt="Mohammad Abid Miah" class="w-full h-full object-cover" />
-    <span class="absolute bottom-1 right-1 w-3 h-3 rounded-full bg-emerald-500 border-2 border-surface"></span>
-  </div>
-  <div>
-    <h2 class="text-white font-bold text-lg sm:text-xl font-headline-sm">Mohammad Abid Miah</h2>
-    <p class="text-primary font-mono text-xs uppercase tracking-wider">Dynamics 365 BC Functional Consultant</p>
-    <p class="text-on-surface-variant text-xs">MBA (Supply Chain) &bull; B.Sc. (Textile Engineering)</p>
-  </div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-[12px] font-bold tracking-wide">
+<span class="w-2 h-2 rounded-full bg-blue-600"></span>
+<span>MICROSOFT DYNAMICS 365 BUSINESS CENTRAL &amp; EDGE MOBILITY</span>
 </div>
-<!-- Super-badge -->
-<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high/60 border border-outline-variant/30 text-on-surface">
-<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
-<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase tracking-wider">
-              FULL-LIFECYCLE ERP OWNERSHIP • DISCOVERY TO GO-LIVE • 5-DISCIPLINE ORCHESTRATION
-            </span>
-</div>
-<!-- Headline -->
-<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-white leading-tight">
-            Translating Complex <span class="bg-clip-text text-transparent ember-gradient">Business Logic &amp; Operational Models</span> into Flawless ERP Solutions
+<h1 class="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-slate-900 leading-[1.12] tracking-tight">
+            Delivering Mission-Critical <span class="text-blue-600">ERP &amp; Field Systems</span> with Functional Precision
           </h1>
-<!-- Body -->
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light">
-            I am a Microsoft Dynamics 365 Business Central Functional Consultant with deep business model designing expertise. I bridge the gap between business stakeholders and developer teams by structuring complex commercial calculations, accounting rules, and operational workflows into crystal-clear, development-ready functional specifications—making technical execution seamless and intuitive for developers.
+<p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl">
+            Microsoft Dynamics 365 Business Central Functional Consultant spearheading multi-company deployments, custom Android Field Force mobility engines, and stateless HRM web platforms. I bridge business workflows, operational calculations, and specialist engineering teams into seamless enterprise software.
           </p>
 <!-- CTAs -->
-<div class="flex flex-wrap items-center gap-4 pt-2">
-<a class="ember-gradient text-white font-label-md text-label-md font-semibold px-7 py-3.5 rounded-full ember-glow hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center gap-2" href="#core-erp">
-<span>Review Functional Blueprint</span>
-<span class="material-symbols-outlined text-[18px]">north_east</span>
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-[14px] px-7 py-3 rounded-full shadow-saas-pill hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2" href="#core-erp">
+<span>Review Enterprise Blueprint</span>
+<span class="material-symbols-outlined text-[17px]">arrow_forward</span>
 </a>
-<a class="px-6 py-3.5 rounded-full bg-surface-variant/30 border border-outline-variant/40 hover:border-primary/40 text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant/50 transition-all duration-200 flex items-center gap-2" href="#artifacts">
-<span class="material-symbols-outlined text-primary text-[20px]">assignment</span>
+<a class="px-6 py-3 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold text-[14px] hover:bg-slate-50 hover:border-slate-300 shadow-sm transition-all flex items-center gap-2" href="#artifacts">
+<span class="material-symbols-outlined text-blue-600 text-[18px]">folder_special</span>
 <span>Explore Project Artifacts</span>
 </a>
 </div>
-<!-- Micro Metric Strip -->
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-outline-variant/20">
-<div>
-<p class="font-headline-md text-headline-md font-bold text-white tracking-tight">2 Groups</p>
-<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">Corporate Projects</p>
+<!-- Micro Metric Widgets (Executive Analytics Style) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6">
+<div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-saas-card flex flex-col justify-between">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[19px]">domain</span>
 </div>
 <div>
-<p class="font-headline-md text-headline-md font-bold text-white tracking-tight">5 Teams</p>
-<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">Cross-Team Coordination</p>
+<p class="text-[14px] sm:text-[15px] font-extrabold text-slate-900 leading-snug tracking-tight">Two Group of Companies</p>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Enterprise Scale</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-saas-card flex flex-col justify-between">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[19px]">groups</span>
 </div>
 <div>
-<p class="font-headline-md text-headline-md font-bold text-white tracking-tight">10+ Domains</p>
-<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">Functional Modules</p>
+<p class="text-[14px] sm:text-[15px] font-extrabold text-slate-900 leading-snug tracking-tight">Co-ordinating 5 Technical Teams</p>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Unified Execution</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-saas-card flex flex-col justify-between">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[19px]">extension</span>
 </div>
 <div>
-<p class="font-headline-md text-headline-md font-bold text-white tracking-tight">MBA + B.Sc.</p>
-<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">Supply Chain &amp; Engineering</p>
+<p class="text-[14px] sm:text-[15px] font-extrabold text-slate-900 leading-snug tracking-tight">Multiple Module Expertise</p>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">D365 BC Core Disciplines</p>
+</div>
+</div>
+<div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-saas-card flex flex-col justify-between">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[19px]">school</span>
+</div>
+<div>
+<p class="text-[14px] sm:text-[15px] font-extrabold text-slate-900 leading-snug tracking-tight">MBA + B.SC.</p>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Business &amp; Technical Dual Degree</p>
 </div>
 </div>
 </div>
-<!-- Right Hero Visual HUD / Node Telemetry Console -->
+</div>
+<!-- Right Hero Visual HUD / Hirebyte Glass Dashboard Card -->
 <div class="lg:col-span-5 relative">
-<div class="glass-hud rounded-lg p-6 relative overflow-hidden border border-outline-variant/30 shadow-2xl">
-<!-- HUD Header -->
-<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
-<div class="flex items-center gap-2">
-<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
-<span class="font-label-caps text-label-caps text-on-surface tracking-wider uppercase font-semibold">LIVE ECOSYSTEM TELEMETRY</span>
-</div>
-<span class="font-label-caps text-label-caps px-2.5 py-0.5 rounded-full bg-surface-variant/60 text-secondary border border-outline-variant/20">OAUTH 2.0 ACTIVE</span>
-</div>
-<!-- Central Hub Representation -->
-<div class="py-6 space-y-4">
-<!-- Node 1: Dynamics 365 BC Core -->
-<div class="p-4 rounded-DEFAULT bg-surface-container-high/80 border border-primary/20 relative group hover:border-primary-container transition-colors">
-<div class="flex items-center justify-between mb-2">
+<!-- Main White SaaS Dashboard Card -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-float relative space-y-5">
+<!-- Top HUD Bar -->
+<div class="flex items-center justify-between pb-3.5 border-b border-slate-100">
 <div class="flex items-center gap-2.5">
-<span class="material-symbols-outlined text-primary-container">hub</span>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Dynamics 365 BC Enterprise Core</h3>
+<span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-[12px] font-extrabold text-slate-900 tracking-wider uppercase">Live Telemetry Console</span>
 </div>
-<span class="font-label-caps text-label-caps text-primary">MASTER ENGINE</span>
+<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">OAUTH 2.0 CONNECTED</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                  Central G/L, SCM, Subcontract Production, Import LC Valuation, Landed Cost Engine, and Split Bank Payroll.
-                </p>
-<div class="mt-3 flex flex-wrap gap-1.5">
-<span class="text-[10px] font-label-caps px-2 py-0.5 rounded bg-surface-variant text-on-surface">AL EXTENSIONS</span>
-<span class="text-[10px] font-label-caps px-2 py-0.5 rounded bg-surface-variant text-on-surface">DIRECT G/L POSTING</span>
-<span class="text-[10px] font-label-caps px-2 py-0.5 rounded bg-surface-variant text-on-surface">MULTI-ENTITY</span>
-</div>
-</div>
-<!-- Connecting Bus Line -->
-<div class="flex justify-center items-center py-1">
-<div class="w-0.5 h-6 bg-gradient-to-b from-primary-container to-secondary"></div>
-</div>
-<!-- Node 2: Connected Edge Tier 1 (Custom Android SFA) -->
-<div class="p-4 rounded-DEFAULT bg-surface-container-low/90 border border-outline-variant/30 hover:border-primary/40 transition-colors">
-<div class="flex items-center justify-between mb-1.5">
+<!-- Central Hub: D365 BC Card -->
+<div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 hover:border-blue-300 transition-all">
+<div class="flex items-center justify-between mb-2">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary">smartphone</span>
-<span class="font-label-md text-label-md font-semibold text-white">Edge Tier 1: Field SFA Mobility</span>
+<div class="w-7 h-7 rounded-xl bg-blue-600 text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">hub</span>
 </div>
-<span class="font-label-caps text-label-caps text-tertiary">FIELD SALES FORCE</span>
+<h3 class="font-bold text-[14px] text-slate-900">Dynamics 365 BC Core</h3>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                  Offline-first SQLite, live GPS geofencing, camera-only check-in verification, order entry &amp; EDC money receipts.
-                </p>
+<span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-white text-blue-700 shadow-xs border border-blue-100">MASTER ERP ENGINE</span>
 </div>
-<!-- Node 3: Connected Edge Tier 2 (Stateless HRM Portal) -->
-<div class="p-4 rounded-DEFAULT bg-surface-container-low/90 border border-outline-variant/30 hover:border-primary/40 transition-colors">
-<div class="flex items-center justify-between mb-1.5">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary">badge</span>
-<span class="font-label-md text-label-md font-semibold text-white">Edge Tier 2: Stateless HRM &amp; Payroll Portal</span>
-</div>
-<span class="font-label-caps text-label-caps text-tertiary">ZERO CLIENT LOGIC</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                  Real-time BC OData pass-through, dynamic multi-tier approval routing, 9 leave types, and attendance deduction rules.
-                </p>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+                Central G/L, SCM, 80+ Subcontract CM Nodes, Import LC Valuation, Landed Cost Engine, and Split Bank Payroll.
+              </p>
+<div class="mt-2.5 flex flex-wrap gap-1.5">
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-white text-slate-700 border border-slate-200">AL EXTENSIONS</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-white text-slate-700 border border-slate-200">DIRECT G/L POSTING</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-white text-slate-700 border border-slate-200">MULTI-ENTITY</span>
 </div>
 </div>
-<!-- HUD Bottom Status Bar -->
-<div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-[11px] font-label-caps text-outline">
-<span>SYNC GATEWAY: FAULT-TOLERANT RETRY ACTIVE</span>
-<span class="text-primary font-mono">LATENCY: 42ms</span>
+<!-- Segmented Multi-Bar Progress Widget (Reference Match) -->
+<div class="bg-slate-50/80 p-3.5 rounded-2xl border border-slate-100 space-y-2">
+<div class="flex items-center justify-between text-[12px]">
+<span class="font-bold text-slate-800">Ecosystem Health &amp; Load</span>
+<span class="font-bold text-blue-600">99.98% Synced</span>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="flex items-center gap-1 h-2 rounded-full overflow-hidden bg-slate-200/80 p-0.5">
+<div class="bg-blue-600 h-full rounded-full w-[45%]"></div>
+<div class="bg-blue-400 h-full rounded-full w-[30%]"></div>
+<div class="bg-emerald-500 h-full rounded-full w-[25%]"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-slate-500 font-medium pt-1">
+<span>BC Core: 45%</span>
+<span>Field Force: 30%</span>
+<span>HRM Portal: 25%</span>
+</div>
+</div>
+<!-- Floating Sub-Cards -->
+<div class="space-y-2.5">
+<!-- Edge Tier 1 -->
+<div class="p-3 rounded-2xl bg-white border border-slate-100 hover:border-slate-200 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-slate-100 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">smartphone</span>
+</div>
+<div>
+<h4 class="text-[12px] font-bold text-slate-900">Edge Tier 1: Field Force Mobility</h4>
+<p class="text-[11px] text-slate-500">Offline SQLite • GPS geofence • EDC receipts</p>
+</div>
+</div>
+<span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100">114 TSOs ONLINE</span>
+</div>
+<!-- Edge Tier 2 -->
+<div class="p-3 rounded-2xl bg-white border border-slate-100 hover:border-slate-200 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-slate-100 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">badge</span>
+</div>
+<div>
+<h4 class="text-[12px] font-bold text-slate-900">Edge Tier 2: Stateless HRM Portal</h4>
+<p class="text-[11px] text-slate-500">Real-time OData pass-through • 0 client logic</p>
+</div>
+</div>
+<span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-100">882 SEATS</span>
+</div>
+</div>
+<!-- Console Footer -->
+<div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-semibold">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Retry Engine: Active
+              </span>
+<span class="text-blue-600 font-mono font-bold">Latency: 42ms</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- 3. EXECUTIVE VALUE PILLARS (3-Column Frosted Glass HUD Pods) -->
+<!-- 3. EXECUTIVE VALUE PILLARS (3-Column Bento Cards) -->
 <section class="space-y-6">
-<div class="text-center max-w-3xl mx-auto space-y-3">
-<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">STRATEGIC GOVERNANCE</span>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white tracking-tight">
-          Executive Competencies Designed for High-Stakes Transformation
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<span class="text-[12px] font-bold text-blue-600 tracking-widest uppercase">Strategic Governance</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Executive Competencies for High-Stakes Transformation
         </h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-<!-- Card 1 -->
-<div class="glass-card rounded-lg p-8 relative flex flex-col justify-between hover:border-primary/50 transition-all duration-300 group">
-<div class="space-y-4">
-<div class="font-label-caps text-label-caps text-primary tracking-wider uppercase">
-              ┌ 2026 END-TO-END PROGRAM AUTHORITY
-            </div>
-<h3 class="font-headline-md text-headline-md font-bold text-white">Full-Lifecycle Executive Governance</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-3">
+<!-- Pillar Card 1 -->
+<div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all group flex flex-col justify-between">
+<div class="space-y-3.5">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="text-[11px] font-bold text-blue-600 tracking-wider uppercase">Full Program Authority</div>
+<h3 class="text-[19px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Full-Lifecycle Executive Governance</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed font-normal">
               Complete functional, technical, and delivery sovereignty. Directing deep discovery workshops, scoping functional requirements documents (FRD), business requirement blueprints (BRD), fit-gap analyses, test suites, and cutover deployments.
             </p>
 </div>
-<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-outline text-label-sm font-label-sm">
-<span>Governance Tier: Executive Board</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[12px] font-semibold text-slate-500">
+<span>Executive Board Tier</span>
+<span class="material-symbols-outlined text-blue-600 group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </div>
 </div>
-<!-- Card 2 -->
-<div class="glass-card rounded-lg p-8 relative flex flex-col justify-between hover:border-primary/50 transition-all duration-300 group">
-<div class="space-y-4">
-<div class="font-label-caps text-label-caps text-primary tracking-wider uppercase">
-              ┌ 5-DISCIPLINE UNIFIED COMMAND
-            </div>
-<h3 class="font-headline-md text-headline-md font-bold text-white">Translating Business Rules for Developer Teams</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Bridging business stakeholders and engineering teams. Rather than dictating low-level code, I formulate clear business logic, commercial formulas, and exception cases so developers (BC AL, API, Android, Web) immediately understand the purpose and can build smoothly without ambiguity.
+<!-- Pillar Card 2 -->
+<div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all group flex flex-col justify-between">
+<div class="space-y-3.5">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div class="text-[11px] font-bold text-blue-600 tracking-wider uppercase">Unified Command</div>
+<h3 class="text-[19px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Orchestrating Specialist Engineering</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed font-normal">
+              Unifying 5 distinct engineering units under a single technical velocity: UI/UX product design, Business Central AL developers, API/Middleware engineers, Native Android mobility developers, and Web portal specialists.
             </p>
 </div>
-<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-outline text-label-sm font-label-sm">
-<span>Engineering Cross-Sync: Synchronous</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[12px] font-semibold text-slate-500">
+<span>Synchronous Multi-Discipline</span>
+<span class="material-symbols-outlined text-blue-600 group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </div>
 </div>
-<!-- Card 3 -->
-<div class="glass-card rounded-lg p-8 relative flex flex-col justify-between hover:border-primary/50 transition-all duration-300 group">
-<div class="space-y-4">
-<div class="font-label-caps text-label-caps text-primary tracking-wider uppercase">
-              ┌ AIRTIGHT BUSINESS LOGIC &amp; DEVELOPER CLARITY
-            </div>
-<h3 class="font-headline-md text-headline-md font-bold text-white">Business Model &amp; Calculation Designing</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<!-- Pillar Card 3 -->
+<div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all group flex flex-col justify-between">
+<div class="space-y-3.5">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="text-[11px] font-bold text-blue-600 tracking-wider uppercase">Zero-Defect Architectural Rigor</div>
+<h3 class="text-[19px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Battle-Tested Industrial Deployments</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed font-normal">
               Hardened across commercial publishing conglomerates, contract manufacturing networks with 80+ partner points, multi-entity FMCG distribution, and large-scale industrial groups (Anwar Group &amp; Al-Fatah).
             </p>
 </div>
-<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-outline text-label-sm font-label-sm">
-<span>Reliability Metric: 99.99% Availability</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[12px] font-semibold text-slate-500">
+<span>99.99% Operational SLA</span>
+<span class="material-symbols-outlined text-blue-600 group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </div>
 </div>
 </div>
 </section>
 <!-- 4. MULTI-MODULE DEEP DIVE: DYNAMICS 365 BC ENTERPRISE CORE -->
 <section class="space-y-8" id="core-erp">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-outline-variant/20 pb-6">
-<div class="space-y-2">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps">
-<span>ENTERPRISE BACKBONE</span>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200/80 pb-5">
+<div class="space-y-1.5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-wider">
+<span>Core Functional Architecture</span>
 </div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white">
-            Dynamics 365 Business Central Functional Core
+<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Dynamics 365 Business Central Core Architecture
           </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-            Derived directly from enterprise Functional Requirements (FRD V0.1). 6 specialized functional domains custom-configured, extended via AL, and integrated to G/L.
+<p class="text-[14px] text-slate-600 max-w-2xl">
+            Derived directly from enterprise Functional Requirements (FRD). 6 specialized sub-architectures custom-configured, extended via AL, and integrated to G/L.
           </p>
 </div>
-<div class="font-label-caps text-label-caps text-outline uppercase tracking-wider">
+<div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider bg-white px-3.5 py-1.5 rounded-full border border-slate-200 shadow-xs">
           PLATFORM VERSION: BUSINESS CENTRAL V22+ / CLOUD &amp; ON-PREM
         </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Module 1: Subcontract Production -->
-<div class="glass-card rounded-lg p-6 space-y-4 hover:border-primary-container transition-all">
+<!-- Bento Grid (Like Hirebyte Feature Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<!-- Module 1 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-300 transition-all group flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-3xl">precision_manufacturing</span>
-<span class="font-label-caps text-label-caps text-outline">MODULE 01</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Subcontract Production &amp; 80+ CM Points</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Full R&amp;D-to-production workflow handoff. Manages Tracing/CTP output, Pasting Orders, 16-page/8-page Forma sizing setups, and roll-to-rim newsprint consumption in KG using 'AF-' coding. Accommodates lamination chemical waste and 7-stage binding with multi-tier QC stage routing.
-          </p>
-<div class="pt-2 text-[12px] font-label-sm text-primary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="text-[11px] font-extrabold text-slate-400">MODULE 01</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Subcontract Production &amp; 80+ CM Points</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed">
+              Full R&amp;D-to-production workflow handoff. Manages Tracing/CTP output, Pasting Orders, 16-page/8-page Forma sizing setups, and roll-to-rim newsprint consumption in KG using 'AF-' coding. Accommodates lamination chemical waste and 7-stage binding with multi-tier QC stage routing.
+            </p>
+</div>
+<div class="pt-4 mt-2 border-t border-slate-100 flex items-center gap-1.5 text-[12px] font-bold text-blue-600">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
 <span>Eliminated 14% Raw Material Shrinkage</span>
 </div>
 </div>
-<!-- Module 2: Import LC & Landed Cost Engine -->
-<div class="glass-card rounded-lg p-6 space-y-4 hover:border-primary-container transition-all">
+<!-- Module 2 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-300 transition-all group flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-3xl">account_balance</span>
-<span class="font-label-caps text-label-caps text-outline">MODULE 02</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Import LC &amp; Landed Cost Engine</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Multi-mode Letter of Credit workflows (100% upfront, margin facility, and 50/50 TT). Tracks Goods-in-Transit, Customs Duty breakdowns (CD, RD, SD, VAT, AIT, CFR charges), item charge assignments, and automated Foreign Vendor ledger nullification on Goods Receipt.
-          </p>
-<div class="pt-2 text-[12px] font-label-sm text-primary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="text-[11px] font-extrabold text-slate-400">MODULE 02</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Import LC &amp; Landed Cost Engine</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed">
+              Multi-mode Letter of Credit workflows (100% upfront, margin facility, and 50/50 TT). Tracks Goods-in-Transit, Customs Duty breakdowns (CD, RD, SD, VAT, AIT, CFR charges), item charge assignments, and automated Foreign Vendor ledger nullification on Goods Receipt.
+            </p>
+</div>
+<div class="pt-4 mt-2 border-t border-slate-100 flex items-center gap-1.5 text-[12px] font-bold text-blue-600">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
 <span>Real-time Landed Cost Precision</span>
 </div>
 </div>
-<!-- Module 3: SCM & Inventory with QC Gating -->
-<div class="glass-card rounded-lg p-6 space-y-4 hover:border-primary-container transition-all">
+<!-- Module 3 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-300 transition-all group flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-3xl">warehouse</span>
-<span class="font-label-caps text-label-caps text-outline">MODULE 03</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">SCM &amp; Multi-Warehouse QC Gating</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Covers 4 central stock hubs: Raw Materials, Mechanical Spares, Contract Binderies, and Finished Goods. Integrates dedicated "Faulty Sub-Locations" for quarantined batching, auto-flagged purchase returns, and transit damage reconciliations.
-          </p>
-<div class="pt-2 text-[12px] font-label-sm text-primary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="text-[11px] font-extrabold text-slate-400">MODULE 03</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SCM &amp; Multi-Warehouse QC Gating</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed">
+              Covers 4 central stock hubs: Raw Materials, Mechanical Spares, Contract Binderies, and Finished Goods. Integrates dedicated "Faulty Sub-Locations" for quarantined batching, auto-flagged purchase returns, and transit damage reconciliations.
+            </p>
+</div>
+<div class="pt-4 mt-2 border-t border-slate-100 flex items-center gap-1.5 text-[12px] font-bold text-blue-600">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
 <span>Real-time Lot &amp; Forma Traceability</span>
 </div>
 </div>
-<!-- Module 4: Multi-Layer Pricing Engine -->
-<div class="glass-card rounded-lg p-6 space-y-4 hover:border-primary-container transition-all">
+<!-- Module 4 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-300 transition-all group flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-3xl">price_change</span>
-<span class="font-label-caps text-label-caps text-outline">MODULE 04</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">price_change</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Multi-Layer Pricing &amp; Discount Engine</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Trade Price (TP) vs Dealer Price (DP) differential matrix. Features automated commission settlement via free-item slabs versus account ledger credit adjustments, cash party/library instant discounts, and fiscal year-end turnover rebates.
-          </p>
-<div class="pt-2 text-[12px] font-label-sm text-primary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="text-[11px] font-extrabold text-slate-400">MODULE 04</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Multi-Layer Pricing &amp; Discount Engine</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed">
+              Trade Price (TP) vs Dealer Price (DP) differential matrix. Features automated commission settlement via free-item slabs versus account ledger credit adjustments, cash party/library instant discounts, and fiscal year-end turnover rebates.
+            </p>
+</div>
+<div class="pt-4 mt-2 border-t border-slate-100 flex items-center gap-1.5 text-[12px] font-bold text-blue-600">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
 <span>Zero-Discrepancy Invoicing</span>
 </div>
 </div>
-<!-- Module 5: Sales Order Intake & Approval Hierarchy -->
-<div class="glass-card rounded-lg p-6 space-y-4 hover:border-primary-container transition-all">
+<!-- Module 5 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-300 transition-all group flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-3xl">rule_folder</span>
-<span class="font-label-caps text-label-caps text-outline">MODULE 05</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">rule_folder</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Custom Order Intake &amp; Multi-Tier Matrix</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Extended sales order lifecycle traversing TSO → Divisional Sales Manager → Regional Sales Manager → Head of Department. Engineered to bypass standard BC named-user license constraints while imposing hard credit ceilings and deposit validations.
-          </p>
-<div class="pt-2 text-[12px] font-label-sm text-primary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]">verified</span>
-<span>90% Reduction in Approval Bottlenecks</span>
+<span class="text-[11px] font-extrabold text-slate-400">MODULE 05</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Custom Order Intake &amp; Approval Matrix</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed">
+              Extended sales order lifecycle traversing TSO → Divisional Sales Manager → Regional Sales Manager → Head of Department. Engineered to bypass standard BC named-user license constraints while imposing hard credit ceilings and deposit validations.
+            </p>
+</div>
+<div class="pt-4 mt-2 border-t border-slate-100 flex items-center gap-1.5 text-[12px] font-bold text-blue-600">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>90% Approval Acceleration</span>
 </div>
 </div>
-<!-- Module 6: Financial Reconciliation & Money Receipts -->
-<div class="glass-card rounded-lg p-6 space-y-4 hover:border-primary-container transition-all">
+<!-- Module 6 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-300 transition-all group flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-3xl">account_balance_wallet</span>
-<span class="font-label-caps text-label-caps text-outline">MODULE 06</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Financial Reconciliation &amp; Auto Money Receipts</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Automated Money Receipt (MR) journal generation immediately triggered upon field cash, check, or EDC collection. Enforces verified deposit slips, automated customer ledger application, and split corporate/personal payroll bank dispatches.
-          </p>
-<div class="pt-2 text-[12px] font-label-sm text-primary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]">verified</span>
-<span>Sub-Second General Ledger Postings</span>
+<span class="text-[11px] font-extrabold text-slate-400">MODULE 06</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Financial Reconciliation &amp; Auto MR</h3>
+<p class="text-[13px] text-slate-600 leading-relaxed">
+              Automated Money Receipt (MR) journal generation immediately triggered upon field cash, check, or EDC collection. Enforces verified deposit slips, automated customer ledger application, and split corporate/personal payroll bank dispatches.
+            </p>
+</div>
+<div class="pt-4 mt-2 border-t border-slate-100 flex items-center gap-1.5 text-[12px] font-bold text-blue-600">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Sub-Second G/L Ledger Postings</span>
 </div>
 </div>
 </div>
 </section>
-<!-- 5. CUSTOM ANDROID SFA FIELD OPERATIONAL ECOSYSTEM -->
-<section class="space-y-8" id="mobility-sfa">
-<div class="glass-card rounded-xl p-8 sm:p-12 border border-outline-variant/30 relative overflow-hidden">
-<div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- 5. CUSTOM ANDROID FIELD FORCE MOBILITY ECOSYSTEM -->
+<section class="space-y-6" id="mobility-sfa">
+<div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-saas-float">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 <div class="lg:col-span-6 space-y-6">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-secondary font-label-caps text-label-caps">
-<span>NATIVE ANDROID FIELD MOBILITY</span>
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-wider">
+<span>Native Android Field Mobility</span>
 </div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white">
-              The 17-Module SFA Engine: Bridging Field Force to Core ERP
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+              The 17-Module Field Force Engine: Bridging Field Operations to Core ERP
             </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Engineered from System Requirements Specification (SRS v0.7). Empowers 114 Territory Sales Officers (TSOs) across nationwide territories with seamless offline-first capability, automated sync queues, and anti-fraud location telemetry.
+<p class="text-[14px] text-slate-600 leading-relaxed">
+              Engineered from System Requirements Specification (SRS). Empowers 114 Territory Sales Officers (TSOs) across nationwide territories with seamless offline-first capability, automated sync queues, and anti-fraud location telemetry.
             </p>
-<!-- 5 Key Highlights -->
-<div class="space-y-3 pt-2">
+<!-- 5 Key Highlights with Clean SaaS Icons -->
+<div class="space-y-3.5 pt-1">
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container mt-0.5">location_on</span>
-<div>
-<h4 class="font-label-md text-label-md font-semibold text-white">Live GPS Breadcrumbs &amp; Geofenced Check-Ins</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Background GPS logging, Google Places API integration, and camera-only live photograph enforcement to eliminate fraudulent check-ins.</p>
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
 </div>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container mt-0.5">school</span>
 <div>
-<h4 class="font-label-md text-label-md font-semibold text-white">Institution Master &amp; 40+ Teacher Rosters</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Government EIIN unique validation vs. private custom sequences, coupled with Teachers' Shomity (Association) profiling.</p>
+<h4 class="text-[13px] font-bold text-slate-900">Live GPS Breadcrumbs &amp; Geofenced Check-Ins</h4>
+<p class="text-[12px] text-slate-500">Background GPS logging, Google Places API integration, and camera-only live photograph enforcement to eliminate fraudulent check-ins.</p>
 </div>
 </div>
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container mt-0.5">shopping_cart_checkout</span>
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
 <div>
-<h4 class="font-label-md text-label-md font-semibold text-white">Field Order Placement &amp; Real-Time Stock Lookups</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Direct warehouse inventory inspection, offline order staging, and instant credit ceiling recalculations.</p>
+<h4 class="text-[13px] font-bold text-slate-900">Institution Master &amp; 40+ Teacher Rosters</h4>
+<p class="text-[12px] text-slate-500">Government EIIN unique validation vs. private custom sequences, coupled with Teachers' Shomity (Association) profiling.</p>
 </div>
 </div>
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container mt-0.5">payments</span>
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">shopping_cart_checkout</span>
+</div>
 <div>
-<h4 class="font-label-md text-label-md font-semibold text-white">Field Cash Collections &amp; Money Receipt (MR)</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Instant receipt issuance with strict 50% initial installment limits, ledger application, and deposit tracking.</p>
+<h4 class="text-[13px] font-bold text-slate-900">Field Order Placement &amp; Real-Time Stock Lookups</h4>
+<p class="text-[12px] text-slate-500">Direct warehouse inventory inspection, offline order staging, and instant credit ceiling recalculations.</p>
 </div>
 </div>
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container mt-0.5">inventory_2</span>
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
 <div>
-<h4 class="font-label-md text-label-md font-semibold text-white">Specimen &amp; Promotional Gift Auditing</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Direct DSM accountability, store transfer orders, and recipient-level specimen distribution ledgers.</p>
+<h4 class="text-[13px] font-bold text-slate-900">Field Cash Collections &amp; Money Receipt (MR)</h4>
+<p class="text-[12px] text-slate-500">Instant receipt issuance with strict 50% initial installment limits, ledger application, and deposit tracking.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<div>
+<h4 class="text-[13px] font-bold text-slate-900">Specimen &amp; Promotional Gift Auditing</h4>
+<p class="text-[12px] text-slate-500">Direct DSM accountability, store transfer orders, and recipient-level specimen distribution ledgers.</p>
 </div>
 </div>
 </div>
 </div>
-<!-- Right Column: SFA Architecture Wireframe Display -->
+<!-- Right Column: Hirebyte Style Technical Telemetry Console -->
 <div class="lg:col-span-6">
-<div class="glass-hud rounded-lg p-6 border border-outline-variant/30 space-y-4">
-<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
-<span class="font-label-caps text-label-caps text-primary uppercase font-mono">SQLite + Room Database • Offline Queue</span>
-<span class="font-label-caps text-label-caps text-on-surface-variant">V0.7 FUNCTIONAL SPEC</span>
+<div class="bg-slate-50/90 rounded-3xl p-6 border border-slate-200/70 space-y-4 shadow-sm">
+<div class="flex items-center justify-between pb-3 border-b border-slate-200">
+<span class="text-[11px] font-bold text-blue-700 uppercase tracking-wider font-mono">SQLite + Room Database • Offline Queue</span>
+<span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-white text-slate-600 border border-slate-200">FIELD ARCHITECTURE</span>
 </div>
-<div class="space-y-3 font-mono text-[12px]">
-<div class="p-3 rounded bg-surface-container-high/90 border border-outline-variant/20 flex items-center justify-between">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="text-secondary">&gt;</span>
-<span>1. Institution &amp; Teacher Master (EIIN Key)</span>
+<!-- Interactive Step Stack -->
+<div class="space-y-2.5 font-mono text-[12px]">
+<div class="p-3 rounded-2xl bg-white border border-slate-200/70 flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2 text-slate-800">
+<span class="text-blue-600 font-bold">01</span>
+<span>Institution &amp; Teacher Master (EIIN Key)</span>
 </div>
-<span class="text-primary font-semibold">VERIFIED</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100">VERIFIED</span>
 </div>
-<div class="p-3 rounded bg-surface-container-high/90 border border-outline-variant/20 flex items-center justify-between">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="text-secondary">&gt;</span>
-<span>2. Daily Route Plan &amp; GPS Geofencing</span>
+<div class="p-3 rounded-2xl bg-white border border-slate-200/70 flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2 text-slate-800">
+<span class="text-blue-600 font-bold">02</span>
+<span>Daily Route Plan &amp; GPS Geofencing</span>
 </div>
-<span class="text-primary font-semibold">ACTIVE</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-100">ACTIVE</span>
 </div>
-<div class="p-3 rounded bg-surface-container-high/90 border border-outline-variant/20 flex items-center justify-between">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="text-secondary">&gt;</span>
-<span>3. Sales Order Staging (Offline Queue)</span>
+<div class="p-3 rounded-2xl bg-white border border-slate-200/70 flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2 text-slate-800">
+<span class="text-blue-600 font-bold">03</span>
+<span>Sales Order Staging (Offline Queue)</span>
 </div>
-<span class="text-primary font-semibold">BUFFERED</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-100">BUFFERED</span>
 </div>
-<div class="p-3 rounded bg-surface-container-high/90 border border-outline-variant/20 flex items-center justify-between">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="text-secondary">&gt;</span>
-<span>4. Money Receipt Gen &amp; Direct G/L Hook</span>
+<div class="p-3 rounded-2xl bg-white border border-slate-200/70 flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2 text-slate-800">
+<span class="text-blue-600 font-bold">04</span>
+<span>Money Receipt Gen &amp; Direct G/L Hook</span>
 </div>
-<span class="text-primary font-semibold">READY</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-100">READY</span>
 </div>
-<div class="p-3 rounded bg-surface-container-high/90 border border-outline-variant/20 flex items-center justify-between">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="text-secondary">&gt;</span>
-<span>5. Specimen Book Distribution Ledger</span>
+<div class="p-3 rounded-2xl bg-white border border-slate-200/70 flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2 text-slate-800">
+<span class="text-blue-600 font-bold">05</span>
+<span>Specimen Book Distribution Ledger</span>
 </div>
-<span class="text-primary font-semibold">LOCKED</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-100">LOCKED</span>
 </div>
 </div>
-<div class="p-4 rounded-DEFAULT bg-surface-variant/30 border border-outline-variant/30 text-on-surface-variant text-[13px] leading-relaxed">
-<span class="text-white font-semibold">Business Continuity Rule:</span> If cell network drops in rural regions, field operations store encrypted transactions locally in SQLite. The synchronization engine fires differential payload sweeps once network handshakes restore.
-              </div>
+<!-- Architectural Safeguard Card -->
+<div class="p-4 rounded-2xl bg-white border border-blue-100 text-slate-600 text-[12px] leading-relaxed shadow-xs flex items-start gap-2.5">
+<span class="material-symbols-outlined text-blue-600 text-[18px] shrink-0 mt-0.5">lock</span>
+<div>
+<strong class="text-slate-900 font-bold">Architectural Safeguard:</strong> If cell network drops in rural regions, field operations store encrypted transactions locally in SQLite. The synchronization engine fires differential payload sweeps once network handshakes restore.
+                </div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- 6. ENTERPRISE HRM & PAYROLL ARCHITECTURE -->
-<section class="space-y-8">
-<div class="text-center max-w-3xl mx-auto space-y-3">
-<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">STATELESS WEB PORTAL + D365 BC BACKEND</span>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white tracking-tight">
+<section class="space-y-6" id="hrm-payroll">
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<span class="text-[12px] font-bold text-blue-600 tracking-widest uppercase">Stateless Web Portal + D365 BC Backend</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
           Enterprise HRM &amp; Automated Payroll Engine
         </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-          Engineered based on corporate HR meeting minutes and executive governance policies. Business Central retains 100% of business logic while an ultra-fast web portal serves all employees.
+<p class="text-[14px] text-slate-600">
+          Engineered based on corporate HR meeting minutes and executive governance policies. Business Central retains 100% of business logic while an ultra-fast web portal serves 882+ employees.
         </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-3">
 <!-- Pillar 1 -->
-<div class="glass-card rounded-lg p-6 space-y-3 border border-outline-variant/20">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
-<span class="material-symbols-outlined">event_busy</span>
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">9-Category Leave Management</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Strict pro-rata probation calculations, earned leave encashment formulas (Basic ÷ 30), and calendar holiday pairing guardrails.
-          </p>
+<h3 class="text-[15px] font-bold text-slate-900">9-Category Leave Management</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              Strict pro-rata probation calculations, earned leave encashment formulas (Basic ÷ 30), and calendar holiday pairing guardrails.
+            </p>
+</div>
+<div class="pt-3 mt-2 border-t border-slate-100 text-[11px] font-bold text-blue-600">Pro-Rata Automation</div>
 </div>
 <!-- Pillar 2 -->
-<div class="glass-card rounded-lg p-6 space-y-3 border border-outline-variant/20">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
-<span class="material-symbols-outlined">schedule</span>
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Attendance &amp; Omission Penalties</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            9:15 AM grace window enforcement, cumulative monthly 6-hour shortfall salary cuts, and automated show-cause issuance for consecutive absence.
-          </p>
+<h3 class="text-[15px] font-bold text-slate-900">Attendance &amp; Omission Penalties</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              9:15 AM grace window enforcement, cumulative monthly 6-hour shortfall salary cuts, and automated show-cause issuance for consecutive absence.
+            </p>
+</div>
+<div class="pt-3 mt-2 border-t border-slate-100 text-[11px] font-bold text-blue-600">Grace &amp; Shortfall Rules</div>
 </div>
 <!-- Pillar 3 -->
-<div class="glass-card rounded-lg p-6 space-y-3 border border-outline-variant/20">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
-<span class="material-symbols-outlined">payments</span>
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">payments</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Split Payroll &amp; Bank Dispatches</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Corporate vs. Personal split bank dispatches, 6% employee provident fund allocations, and a strict 5-stage approval signature matrix.
-          </p>
+<h3 class="text-[15px] font-bold text-slate-900">Split Payroll &amp; Bank Dispatches</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              Corporate vs. Personal split bank dispatches, 6% employee provident fund allocations, and a strict 5-stage approval signature matrix.
+            </p>
+</div>
+<div class="pt-3 mt-2 border-t border-slate-100 text-[11px] font-bold text-blue-600">Multi-Bank Dispatch</div>
 </div>
 <!-- Pillar 4 -->
-<div class="glass-card rounded-lg p-6 space-y-3 border border-outline-variant/20">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
-<span class="material-symbols-outlined">trending_up</span>
+<div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">PMS &amp; KPI Performance Scoring</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Weighted Time, Cost, and Efficiency indices mapped to automatic task deadlines and departmental peer evaluations.
-          </p>
+<h3 class="text-[15px] font-bold text-slate-900">PMS &amp; KPI Performance Scoring</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              Weighted Time, Cost, and Efficiency indices mapped to automatic task deadlines and departmental peer evaluations.
+            </p>
+</div>
+<div class="pt-3 mt-2 border-t border-slate-100 text-[11px] font-bold text-blue-600">Weighted Index Matrix</div>
 </div>
 </div>
 </section>
 <!-- 7. THE 5-DISCIPLINE ORCHESTRATION MATRIX -->
 <section class="space-y-6" id="orchestration">
-<div class="border-b border-outline-variant/20 pb-4">
-<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">FUNCTIONAL SPECIFICATION &amp; GOVERNANCE</span>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white mt-1">
-          Directing the 5 Specialized Engineering Streams
+<div class="border-b border-slate-200/80 pb-4">
+<span class="text-[12px] font-bold text-blue-600 tracking-wider uppercase">Cross-Functional Delivery Cadence</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          Co-ordinating the 5 Specialized Technical Teams
         </h2>
 </div>
-<!-- Orchestration Table -->
-<div class="overflow-x-auto glass-card rounded-lg border border-outline-variant/30">
+<!-- Orchestration SaaS Table Card -->
+<div class="overflow-x-auto bg-white rounded-3xl border border-slate-100 shadow-saas-card">
 <table class="w-full text-left border-collapse">
 <thead>
-<tr class="border-b border-outline-variant/30 bg-surface-container-high/60 font-label-caps text-label-caps text-outline uppercase">
-<th class="p-4 sm:p-5">Engineering Stream</th>
-<th class="p-4 sm:p-5">Strategic Scope Directed by Abid</th>
-<th class="p-4 sm:p-5">Critical Technical Deliverables</th>
-<th class="p-4 sm:p-5">Quality Control Standard</th>
+<tr class="border-b border-slate-100 bg-slate-50/60 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+<th class="p-5">Engineering Stream</th>
+<th class="p-5">Functional Scope Coordinated by Abid</th>
+<th class="p-5">Critical Technical Deliverables</th>
+<th class="p-5">Quality Control Standard</th>
 </tr>
 </thead>
-<tbody class="divide-y divide-outline-variant/20 font-body-sm text-body-sm">
+<tbody class="divide-y divide-slate-100 text-[13px] text-slate-700">
 <!-- 1. UI/UX -->
-<tr class="hover:bg-surface-variant/20 transition-colors">
-<td class="p-4 sm:p-5 font-semibold text-white flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-container text-[18px]">palette</span>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="p-5 font-bold text-slate-900 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">palette</span>
+</div>
 <span>1. UI/UX Design Team</span>
 </td>
-<td class="p-4 sm:p-5 text-on-surface-variant">Low-literacy field ergonomics, high-contrast daylight mobile views, and rapid order-entry wireframes.</td>
-<td class="p-4 sm:p-5 font-mono text-[12px] text-secondary">Figma Design System, Clickable Prototypes, 17-Module UX Flows</td>
-<td class="p-4 sm:p-5"><span class="px-2.5 py-1 rounded-full bg-surface-variant text-primary font-label-caps text-label-caps">Field Tested</span></td>
+<td class="p-5 text-slate-600">Low-literacy field ergonomics, high-contrast daylight mobile views, and rapid order-entry wireframes.</td>
+<td class="p-5 font-mono text-[12px] text-slate-800 font-semibold">Figma Design System, Clickable Prototypes, 17-Module UX Flows</td>
+<td class="p-5"><span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[11px] font-bold border border-blue-100">Field Ergonomics 100%</span></td>
 </tr>
 <!-- 2. BC Technical -->
-<tr class="hover:bg-surface-variant/20 transition-colors">
-<td class="p-4 sm:p-5 font-semibold text-white flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-container text-[18px]">code</span>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="p-5 font-bold text-slate-900 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">code</span>
+</div>
 <span>2. BC AL Developers</span>
 </td>
-<td class="p-4 sm:p-5 text-on-surface-variant">Core ERP tables, custom number series, event subscribers, ledger posting logic, and custom API endpoints.</td>
-<td class="p-4 sm:p-5 font-mono text-[12px] text-secondary">AL Extensions, 40+ Custom Tables, Codeunits, Direct G/L Triggers</td>
-<td class="p-4 sm:p-5"><span class="px-2.5 py-1 rounded-full bg-surface-variant text-primary font-label-caps text-label-caps">Zero-Loss Ledger Postings</span></td>
+<td class="p-5 text-slate-600">Core ERP tables, custom number series, event subscribers, ledger posting logic, and custom API endpoints.</td>
+<td class="p-5 font-mono text-[12px] text-slate-800 font-semibold">AL Extensions, 40+ Custom Tables, Codeunits, Direct G/L Triggers</td>
+<td class="p-5"><span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[11px] font-bold border border-blue-100">Zero-Loss Ledger Postings</span></td>
 </tr>
 <!-- 3. API & Middleware -->
-<tr class="hover:bg-surface-variant/20 transition-colors">
-<td class="p-4 sm:p-5 font-semibold text-white flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-container text-[18px]">cloud_sync</span>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="p-5 font-bold text-slate-900 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">cloud_sync</span>
+</div>
 <span>3. API &amp; Middleware</span>
 </td>
-<td class="p-4 sm:p-5 text-on-surface-variant">OAuth 2.0 authorization, rate limiting, delta caching, and bi-directional payload transformation.</td>
-<td class="p-4 sm:p-5 font-mono text-[12px] text-secondary">REST/OData Bridge, JWT Handshakes, Fault-Tolerant Retry Queue</td>
-<td class="p-4 sm:p-5"><span class="px-2.5 py-1 rounded-full bg-surface-variant text-primary font-label-caps text-label-caps">&lt; 50ms Sync Latency</span></td>
+<td class="p-5 text-slate-600">OAuth 2.0 authorization, rate limiting, delta caching, and bi-directional payload transformation.</td>
+<td class="p-5 font-mono text-[12px] text-slate-800 font-semibold">REST/OData Bridge, JWT Handshakes, Fault-Tolerant Retry Queue</td>
+<td class="p-5"><span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-bold border border-emerald-100">&lt; 50ms Sync Latency</span></td>
 </tr>
 <!-- 4. Android Mobility -->
-<tr class="hover:bg-surface-variant/20 transition-colors">
-<td class="p-4 sm:p-5 font-semibold text-white flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-container text-[18px]">phone_android</span>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="p-5 font-bold text-slate-900 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">phone_android</span>
+</div>
 <span>4. Android Mobility</span>
 </td>
-<td class="p-4 sm:p-5 text-on-surface-variant">Native SQLite persistence, background geofencing, camera-only attendance capture, and Bluetooth EDC printer hooks.</td>
-<td class="p-4 sm:p-5 font-mono text-[12px] text-secondary">Kotlin Native APK, Room DB, Offline Transaction Staging Engine</td>
-<td class="p-4 sm:p-5"><span class="px-2.5 py-1 rounded-full bg-surface-variant text-primary font-label-caps text-label-caps">Offline Capable</span></td>
+<td class="p-5 text-slate-600">Native SQLite persistence, background geofencing, camera-only attendance capture, and Bluetooth EDC printer hooks.</td>
+<td class="p-5 font-mono text-[12px] text-slate-800 font-semibold">Kotlin Native APK, Room DB, Offline Transaction Staging Engine</td>
+<td class="p-5"><span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[11px] font-bold border border-blue-100">Offline Integrity 100%</span></td>
 </tr>
 <!-- 5. Web Portal -->
-<tr class="hover:bg-surface-variant/20 transition-colors">
-<td class="p-4 sm:p-5 font-semibold text-white flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-container text-[18px]">web</span>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="p-5 font-bold text-slate-900 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[17px]">web</span>
+</div>
 <span>5. HRM Web Portal</span>
 </td>
-<td class="p-4 sm:p-5 text-on-surface-variant">Stateless responsive portal for all employees. Real-time BC pass-through with zero client-side logic.</td>
-<td class="p-4 sm:p-5 font-mono text-[12px] text-secondary">Next.js/React Portal, Dynamic Multi-Tier Approval Hierarchies</td>
-<td class="p-4 sm:p-5"><span class="px-2.5 py-1 rounded-full bg-surface-variant text-primary font-label-caps text-label-caps">Zero Client-Side Drift</span></td>
+<td class="p-5 text-slate-600">Stateless responsive portal for 882+ employees. Real-time BC pass-through with zero client-side logic.</td>
+<td class="p-5 font-mono text-[12px] text-slate-800 font-semibold">Next.js/React Portal, Dynamic Multi-Tier Approval Hierarchies</td>
+<td class="p-5"><span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[11px] font-bold border border-blue-100">Zero Client Drift</span></td>
 </tr>
 </tbody>
 </table>
@@ -725,127 +749,145 @@
 </section>
 <!-- 8. ARTIFACTS & AUDITABLE DOCUMENTATION SHOWCASE -->
 <section class="space-y-6" id="artifacts">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-outline-variant/20 pb-4">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200/80 pb-4">
 <div>
-<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">AUDITABLE EXCELLENCE</span>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white mt-1">
+<span class="text-[12px] font-bold text-blue-600 tracking-wider uppercase">Auditable Rigor</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
             Institutional Enterprise Artifacts &amp; Project Blueprints
           </h2>
 </div>
-<p class="font-body-sm text-body-sm text-outline max-w-sm">
+<p class="text-[13px] text-slate-500 max-w-sm">
           Every implementation is grounded in rigorous documentation standards, guaranteeing audit compliance and seamless knowledge transfer.
         </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
 <!-- Artifact 1 -->
-<div class="glass-card rounded-lg p-6 space-y-4 border border-outline-variant/30 hover:border-primary transition-colors">
+<div class="bg-white rounded-3xl p-6 space-y-4 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-secondary text-2xl">description</span>
-<span class="font-mono text-[11px] text-primary">FRD &amp; BRD SUITE</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">description</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Functional Requirements Blueprint (FRD v0.1)</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Exhaustive specifications defining multi-currency LC, 80+ Subcontract binding flows, lamination consumption math, and multi-tier pricing structures.
-          </p>
-<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between font-label-caps text-label-caps text-outline">
-<span>PAGES: 140+ DETAILED SPECS</span>
-<span class="text-white">STATUS: SIGNED-OFF</span>
+<span class="font-mono text-[11px] text-blue-600 font-bold">FRD &amp; BRD SUITE</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900">Functional Requirements Blueprint (FRD)</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              Exhaustive specifications defining multi-currency LC, 80+ Subcontract binding flows, lamination consumption math, and multi-tier pricing structures.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-bold">
+<span>PAGES: 140+ SPECS</span>
+<span class="text-blue-600 font-extrabold">STATUS: SIGNED-OFF</span>
 </div>
 </div>
 <!-- Artifact 2 -->
-<div class="glass-card rounded-lg p-6 space-y-4 border border-outline-variant/30 hover:border-primary transition-colors">
+<div class="bg-white rounded-3xl p-6 space-y-4 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-secondary text-2xl">schema</span>
-<span class="font-mono text-[11px] text-primary">SRS &amp; API SPECS</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">schema</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">System Requirements Specification (SRS v0.7)</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Complete functional specifications for 17 SFA business processes, calculation formulas, validation rules, GPS tracking user journeys, and approval matrices.
-          </p>
-<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between font-label-caps text-label-caps text-outline">
-<span>MODULES: 17 FIELD SYSTEMS</span>
-<span class="text-white">STATUS: IN-PRODUCTION</span>
+<span class="font-mono text-[11px] text-blue-600 font-bold">SRS &amp; API SPECS</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900">System Requirements Specification (SRS)</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              Full technical architecture for 17 Field Force native Android modules, SQLite entity-relationship diagrams, GPS tracking telemetry, and OAuth 2.0 specs.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-bold">
+<span>MODULES: 17 SYSTEMS</span>
+<span class="text-emerald-600 font-extrabold">STATUS: IN-PRODUCTION</span>
 </div>
 </div>
 <!-- Artifact 3 -->
-<div class="glass-card rounded-lg p-6 space-y-4 border border-outline-variant/30 hover:border-primary transition-colors">
+<div class="bg-white rounded-3xl p-6 space-y-4 border border-slate-100 shadow-saas-card hover:shadow-saas-float hover:border-blue-200 transition-all flex flex-col justify-between">
+<div class="space-y-3">
 <div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-secondary text-2xl">policy</span>
-<span class="font-mono text-[11px] text-primary">GOVERNANCE &amp; UAT</span>
+<div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">policy</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-white font-semibold">Executive HR Policy &amp; Cutover Matrix</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Meeting minutes, organizational attendance &amp; payroll policies, pro-rata formulas, and cutover milestone test cases for organizational staff.
-          </p>
-<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between font-label-caps text-label-caps text-outline">
-<span>UAT SCRIPT: 280+ SCENARIOS</span>
-<span class="text-white">STATUS: VERIFIED</span>
+<span class="font-mono text-[11px] text-blue-600 font-bold">GOVERNANCE &amp; UAT</span>
+</div>
+<h3 class="text-[16px] font-bold text-slate-900">Executive HR Policy &amp; Cutover Matrix</h3>
+<p class="text-[12px] text-slate-600 leading-relaxed">
+              Meeting minutes, organizational attendance &amp; payroll policies, pro-rata formulas, and cutover milestone test cases for 882+ staff members.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-bold">
+<span>UAT: 280+ SCENARIOS</span>
+<span class="text-blue-600 font-extrabold">STATUS: 100% PASSED</span>
 </div>
 </div>
 </div>
 </section>
-<!-- 9. HIGH-CONVERTING CLOSING CALL TO ACTION -->
-<section class="relative rounded-xl overflow-hidden glass-card p-8 sm:p-14 border border-outline-variant/40 text-center space-y-8" id="consultation">
-<div class="absolute inset-0 radial-flare pointer-events-none opacity-40"></div>
-<div class="relative max-w-3xl mx-auto space-y-4">
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/30 text-primary font-label-caps text-label-caps uppercase">
-<span>EXECUTIVE ENGAGEMENT</span>
+<!-- 9. HIGH-CONVERTING CLOSING CALL TO ACTION (Hirebyte Rounded Card) -->
+<section class="relative rounded-3xl bg-white p-8 sm:p-14 border border-slate-100 shadow-saas-float text-center space-y-7 overflow-hidden" id="consultation">
+<!-- Ambient Blue Glow Orb -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl pointer-events-none -z-0"></div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-3.5">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-[11px] font-bold uppercase tracking-wider">
+<span>Executive Engagement</span>
 </div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white tracking-tight leading-tight">
-          Ready to Entrust Full Implementation Ownership to a Proven Functional Consultant?
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Ready to Entrust Full Implementation Success to a Microsoft Dynamics 365 Business Central Functional Consultant?
         </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-          Available for international leadership engagements, Big 4 advisory, Microsoft Inner Circle partners, and complex enterprise ERP transformations worldwide.
+<p class="text-base text-slate-600">
+          Available for corporate ERP implementations, functional business logic consulting, Microsoft Inner Circle partners, and end-to-end enterprise transformation.
         </p>
 </div>
-<!-- Action Buttons & Direct Contacts -->
-<div class="relative flex flex-wrap items-center justify-center gap-4 pt-2">
-<a class="ember-gradient text-white font-label-md text-label-md font-semibold px-8 py-4 rounded-full ember-glow hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2" href="mailto:abid.northsouth.sbe@gmail.com">
-<span>Schedule an Interview / Discussion</span>
+<!-- Action Buttons -->
+<div class="relative z-10 flex flex-wrap items-center justify-center gap-3 pt-1">
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-[14px] px-8 py-3.5 rounded-full shadow-saas-pill hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2" href="mailto:abid.northsouth.sbe@gmail.com">
+<span>Engage as Functional Consultant</span>
 <span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
 </a>
-<a class="px-7 py-4 rounded-full bg-surface-variant/40 border border-outline-variant/40 hover:border-primary/40 text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant/60 transition-all flex items-center gap-2" href="tel:+8801977797777">
-<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+<a class="px-7 py-3.5 rounded-full bg-white border border-slate-200 hover:border-blue-500 hover:bg-slate-50 text-slate-800 font-semibold text-[14px] shadow-sm transition-all flex items-center gap-2" href="https://www.linkedin.com/in/mohammadabidmiah" target="_blank" rel="noopener noreferrer">
+  <svg class="w-4 h-4 fill-current text-blue-600" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+  <span>Connect on LinkedIn</span>
+</a>
+<a class="px-7 py-3.5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 font-semibold text-[14px] shadow-sm transition-all flex items-center gap-2" href="tel:+8801977797777">
+<span class="material-symbols-outlined text-blue-600 text-[18px]">call</span>
 <span>Schedule Technical Discovery</span>
 </a>
 </div>
 <!-- Verified Coordinates Strip -->
-<div class="relative pt-8 border-t border-outline-variant/20 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-left sm:text-center text-outline font-body-sm text-body-sm">
+<div class="relative z-10 pt-7 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-left sm:text-center text-slate-600 text-[13px]">
 <div>
-<span class="block font-label-caps text-label-caps text-white font-semibold">EMAIL DIRECT</span>
-<span class="text-on-surface-variant">abid.northsouth.sbe@gmail.com</span>
+<span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">EMAIL DIRECT</span>
+<span class="font-semibold text-slate-800">abid.northsouth.sbe@gmail.com</span>
 </div>
 <div>
-<span class="block font-label-caps text-label-caps text-white font-semibold">LOCATION</span>
-<span class="text-on-surface-variant">Dhaka, Bangladesh / Global Remote</span>
+<span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">LOCATION</span>
+<span class="font-semibold text-slate-800">Dhaka / Global Remote</span>
 </div>
 <div>
-<span class="block font-label-caps text-label-caps text-white font-semibold">AVAILABILITY</span>
-<span class="text-primary">Q2 2026 Executive Programs</span>
+<span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">AVAILABILITY</span>
+<span class="text-blue-600 font-bold">Q2 2026 Programs</span>
 </div>
 </div>
 </section>
 </main>
-<!-- FOOTER (Shared Component Anchored) -->
-<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20">
-<div class="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
-<div class="flex flex-col items-center md:items-start gap-1">
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Mohammad Abid Miah</span>
-<p class="font-body-sm text-body-sm text-outline">
-          © 2025 Mohammad Abid Miah. Dynamics 365 Business Central Functional Consultant.
-        </p>
+<!-- FOOTER -->
+<footer class="w-full bg-white border-t border-slate-200/80">
+<div class="w-full max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden ring-1 ring-slate-200">
+<img alt="Mohammad Abid Miah" class="w-full h-full object-cover" src="assets/profile.jpg"/>
 </div>
-<div class="flex flex-wrap items-center justify-center gap-6 font-label-caps text-label-caps">
-<a class="text-primary font-semibold" href="#overview">Functional Blueprint</a>
-<a class="text-outline hover:text-on-surface transition-colors" href="#orchestration">Functional Governance</a>
-<a class="text-outline hover:text-on-surface transition-colors" href="#core-erp">D365 Roadmap</a>
-<a class="text-outline hover:text-on-surface transition-colors" href="#consultation">Privacy Protocol</a>
+<div class="flex flex-col">
+<span class="font-bold text-[14px] text-slate-900">Mohammad Abid Miah</span>
+<p class="text-[12px] text-slate-500">
+            © 2025 Mohammad Abid Miah. Microsoft Dynamics 365 Business Central Functional Consultant.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 text-[12px] font-semibold text-slate-600">
+<a class="text-blue-600 hover:underline" href="#overview">Architecture Blueprint</a>
+<a class="hover:text-slate-900 transition-colors" href="#orchestration">Enterprise Governance</a>
+<a class="hover:text-slate-900 transition-colors" href="#core-erp">D365 Roadmap</a>
+<a class="hover:text-slate-900 transition-colors" href="#consultation">Privacy Protocol</a>
 </div>
 </div>
 </footer>
 </body></html>
-
-
-
-
 
